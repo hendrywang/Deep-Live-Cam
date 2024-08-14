@@ -256,7 +256,7 @@ def webcam_preview():
     
     global preview_label, PREVIEW
 
-    cap = cv2.VideoCapture(0)  # Use index for the webcam (adjust the index accordingly if necessary)    
+    cap = cv2.VideoCapture(1)  # Use index for the webcam (adjust the index accordingly if necessary)    
     cap.set(cv2.CAP_PROP_FRAME_WIDTH, 960)  # Set the width of the resolution
     cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 540)  # Set the height of the resolution
     cap.set(cv2.CAP_PROP_FPS, 60)  # Set the frame rate of the webcam
